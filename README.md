@@ -69,4 +69,4 @@ This project supports **Brand A** and **Brand B** themes.
 See **`APPROACH.md`** for the design-to-code workflow and how tokens/themes are managed in this repo (including what happens when tokens change and how automated/maintainable the approach is).
 
 
-# biglight-ui
+

@@ -1,0 +1,8 @@
+/* Storybook-only reset so the canvas uses default Storybook sizing/colors. */
+html,
+body {
+  background: #ffffff;
+  color: inherit;
+}
+
+

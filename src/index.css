@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bl-preview-buttons-grid {
+  grid-template-columns: var(--bl-scale-2600) repeat(3, minmax(calc(var(--bl-scale-3000) + var(--bl-scale-2500)), 1fr));
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: calc(var(--bl-scale-3000) + var(--bl-scale-2500) + var(--bl-scale-2500));
+  background: var(--bl-bg);
+  color: var(--bl-fg);
+}
+
+.bl-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--bl-fg) 25%, transparent) transparent;
+}
+.bl-scrollbar::-webkit-scrollbar {
+  width: calc(var(--bl-border-width-md) * 4);
+}
+.bl-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.bl-scrollbar::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--bl-fg) 22%, transparent);
+  border-radius: var(--bl-border-radius-round);
+}
+
+a {
+  color: var(--bl-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
